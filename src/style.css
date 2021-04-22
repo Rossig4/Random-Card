@@ -1,1 +1,35 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: green;
+}
+.card {
+  display: inline-block;
+  text-align: center;
+  background: white;
+  margin: auto;
+  font-size: 60px;
+  height: 300px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.figurasup {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 60px;
+}
+.figurainf {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 60px;
+  transform: rotate(180deg);
+}
+.numero {
+  position: absolute;
+  left: 75px;
+  top: 85px;
+  font-size: 80px;
+}
