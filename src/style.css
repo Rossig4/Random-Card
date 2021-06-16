@@ -1,7 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-body {
-  background: green;
+.body {
+  box-sizing: border-box;
 }
+
 .card {
   display: inline-block;
   text-align: center;
@@ -13,23 +14,37 @@ body {
   padding: 10px;
   border-radius: 10px;
   position: relative;
+  box-shadow: black;
 }
-.figurasup {
+.card::before {
   position: absolute;
   top: 10px;
   left: 10px;
   font-size: 60px;
 }
-.figurainf {
+.card::after {
   position: absolute;
   bottom: 10px;
   right: 10px;
   font-size: 60px;
   transform: rotate(180deg);
 }
-.numero {
-  position: absolute;
-  left: 75px;
-  top: 85px;
-  font-size: 80px;
+.trebol::before .trebol:after {
+  content: "\2660";
+  color: black;
+}
+.pica:before,
+.pica:after {
+  content: "\2663";
+  color: black;
+}
+.diamante:before,
+.diamante:after {
+  content: "\2666";
+  color: red;
+}
+.corazon:before,
+.corazon:after {
+  content: "\2665";
+  color: red;
 }
